@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/09/30/20/20250930202304-2DYXDJKP.js" defer></script>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Clothes Hangar | Trendy Warm Clothing</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffe8e8 100%);
+        }
+        
+        .clothing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .text-stroke {
+            -webkit-text-stroke: 1px white;
+            text-stroke: 1px white;
+            color: transparent;
+        }
+        
+        .scroll-down {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <h1 class="text-2xl font-bold text-rose-600 font-serif">THE CLOTHES HANGAR</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#" class="text-gray-900 hover:text-rose-600 px-3 py-2 text-sm font-medium">New Arrivals</a>
+                        <a href="#" class="text-gray-900 hover:text-rose-600 px-3 py-2 text-sm font-medium">Men</a>
+                        <a href="#" class="text-gray-900 hover:text-rose-600 px-3 py-2 text-sm font-medium">Women</a>
+                        <a href="#" class="text-gray-900 hover:text-rose-600 px-3 py-2 text-sm font-medium">Unisex</a>
+                        <a href="#" class="text-gray-900 hover:text-rose-600 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#" class="bg-rose-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-rose-700 transition">Shop Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-rose-600">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight font-serif">
+                        Winter Warmth <span class="text-rose-600">Redefined</span>
+                    </h1>
+                    <p class="text-lg text-gray-700 max-w-lg">
+                        Discover our bold collection of premium winter wear designed to keep you cozy without compromising on style. For every gender, every body, and every adventure.
+                    </p>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#" class="bg-rose-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-rose-700 transition">Shop Collection</a>
+                        <a href="#" class="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-900 hover:text-white transition">Explore</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-8 -right-8 w-64 h-64 bg-rose-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                    <div class="absolute -bottom-12 left-20 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                    <div class="relative">
+                        <img src="https://i.imgur.com/zaFTlDs.png" alt="Fashion Model" class="rounded-xl shadow-2xl w-full h-auto object-cover" style="min-height: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif">Categories For <span class="text-rose-600">Everyone</span></h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-600">
+                    Explore our gender-inclusive collections designed to keep you warm in style
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg bg-gray-100 h-96">
+                    <img src="https://i.imgur.com/590Tdk6.png" alt="Men's Collection" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-bold text-white">Men's Collection</h3>
+                        <a href="#" class="mt-2 inline-flex items-center text-white hover:text-rose-300 transition">
+                            Shop Now <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl shadow-lg bg-gray-100 h-96">
+                    <img src="https://i.imgur.com/GCDubuj.png" alt="Women's Collection" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-bold text-white">Women's Collection</h3>
+                        <a href="#" class="mt-2 inline-flex items-center text-white hover:text-rose-300 transition">
+                            Shop Now <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl shadow-lg bg-gray-100 h-96">
+                    <img src="https://i.imgur.com/TpG5efF.png" alt="Unisex Collection" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-bold text-white">Unisex Collection</h3>
+                        <a href="#" class="mt-2 inline-flex items-center text-white hover:text-rose-300 transition">
+                            Shop Now <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif">This Season's <span class="text-rose-600">Stars</span></h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-600">
+                    Our most loved pieces to keep you warm all winter long
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md clothing-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://i.imgur.com/ehyxO2Q.png" alt="Premium Wool Coat" class="w-full h-64 object-cover">
+                        <div class="absolute top-3 right-3 bg-rose-600 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900">Premium Wool Coat</h3>
+                        <p class="text-gray-600 mt-1">Stay warm in style with our signature coat</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-bold text-gray-900">$189</span>
+                            <button class="text-rose-600 hover:text-rose-800 transition">
+                                <i data-feather="shopping-bag" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md clothing-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://i.imgur.com/Wf8b0rk.png" alt="Cashmere Sweater" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900">Cashmere Sweater</h3>
+                        <p class="text-gray-600 mt-1">Luxuriously soft for ultimate comfort</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-bold text-gray-900">$129</span>
+                            <button class="text-rose-600 hover:text-rose-800 transition">
+                                <i data-feather="shopping-bag" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md clothing-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://i.imgur.com/m1S1KsK.png" alt="Thermal Leggings" class="w-full h-64 object-cover">
+                        <div class="absolute top-3 right-3 bg-rose-600 text-white text-xs font-bold px-2 py-1 rounded-full">BESTSELLER</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900">Thermal Leggings</h3>
+                        <p class="text-gray-600 mt-1">Perfect for outdoor activities</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-bold text-gray-900">$59</span>
+                            <button class="text-rose-600 hover:text-rose-800 transition">
+                                <i data-feather="shopping-bag" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md clothing-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://i.imgur.com/oenqhZa.png" alt="Puffer Jacket" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900">Puffer Jacket</h3>
+                        <p class="text-gray-600 mt-1">Lightweight yet incredibly warm</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-bold text-gray-900">$149</span>
+                            <button class="text-rose-600 hover:text-rose-800 transition">
+                                <i data-feather="shopping-bag" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-900 text-gray-900 rounded-md text-lg font-semibold hover:bg-gray-900 hover:text-white transition">
+                    View All Products <i data-feather="arrow-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif">Our <span class="text-rose-600">Community</span> Speaks</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-600">
+                    What our customers say about our products
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex -space-x-2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="http://static.photos/people/200x200/301" alt="Alex">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Alex M.</h4>
+                            <div class="flex text-amber-400 mt-1">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "The cashmere sweater is unreal! So soft and warm. Worth every penny. I've already gotten so many compliments."
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex -space-x-2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="http://static.photos/people/200x200/302" alt="Jamie">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Jamie R.</h4>
+                            <div class="flex text-amber-400 mt-1">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "As someone who hates bulky winter clothes, the thermal leggings have been a game-changer. Warm but not restrictive!"
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex -space-x-2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="http://static.photos/people/200x200/303" alt="Taylor">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Taylor S.</h4>
+                            <div class="flex text-amber-400 mt-1">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "The puffer jacket is my new winter essential. I love that it's warm enough for -10°C but doesn't make me look like a marshmallow."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-rose-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif">Stay Warm, Stay <span class="text-gray-900">Stylish</span></h2>
+                    <p class="mt-4 text-rose-100 max-w-lg">
+                        Sign up for our newsletter and get 15% off your first order plus exclusive early access to new collections.
+                    </p>
+                </div>
+                <div>
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900">
+                        <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition">Subscribe</button>
+                    </form>
+                    <p class="mt-2 text-sm text-rose-100">
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">THE CLOTHES HANGAR</h3>
+                    <p class="text-gray-400">
+                        Redefining winter fashion with bold, warm clothing for all genders.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Men's Collection</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Women's Collection</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Unisex Collection</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Help</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Customer Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Track Order</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping Information</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Fashion Avenue</li>
+                        <li class="text-gray-400">New York, NY 10001</li>
+                        <li class="text-gray-400">hello@clotheshangar.com</li>
+                        <li class="text-gray-400">(555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 The Clothes Hangar. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Animation for blob elements
+        gsap.to(".animate-blob", {
+            duration: 10,
+            x: "random(-100, 100)",
+            y: "random(-100, 100)",
+            repeat: -1,
+            repeatRefresh: true,
+            ease: "none"
+        });
+        
+        // Scroll animation for clothing cards
+        document.querySelectorAll('.clothing-card').forEach((card, index) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 0.6,
+                delay: index * 0.1
+            });
+        });
+    </script>
+</body>
+</html>
+
